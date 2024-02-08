@@ -1,0 +1,38 @@
+p {
+    color: red;
+}
+.p2 {
+    color: aqua;
+}
+#spanWithId3 {
+    color: blue;
+}
+p.p4.p__color_orange {
+    color: rgb(218, 186, 128);
+}
+.p5 span {
+    color: #a465df;
+}
+.p6 > span {
+    color: #82f0b9;
+}
+.p7 ~ p {
+    color: antiquewhite;
+}
+/* it's only take on one */
+#spanWithId9 + a {
+    color: cadetblue;
+}
+/* its takes a inside that parent only, not deeper elemtents  */
+#spanWithId9 > a {
+    color: rgb(221, 200, 107);
+}
+/* it's only take on all in that level */
+#spanWithId10 ~ a {
+    color: #d35e9f;
+}
+
+/* its takes a ALL inside that parent  */
+#spanWithId10 a {
+    color: #56a36e;
+}
