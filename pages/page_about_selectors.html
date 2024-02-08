@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>About CSS Selectors</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="../index.html" class="menu__item-link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./page_selectors_example.html" class="menu__item-link">Selectors Examaple</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <!-- Content -->
+                <h1 class="title">About CSS Selectors</h1>
+                <div>
+                    <ol>
+                        <li>
+                            <p><b>Tag selector</b> - targets elements based on their HTML tag name (e.g., h1, p1)
+                                <br>Example: p { color: red; } - Selects all &lt;p&gt; elements and sets their text
+                                color to red.
+                            </p>
+                        </li>
+                        <li>
+                            <p><b>ID selector</b> - targets elements based on their id attribute, written with # before
+                                the
+                                id (e.g., #main_div)
+                                <br>Example: #error_message { color: red; } - Selects the element
+                                with the ID error_message and sets their text color to red.
+                            </p>
+                        </li>
+                        <li>
+                            <p><b>Class selector</b> - targets elements based on their class name attribute, written
+                                with .
+                                before the class name (e.g., .some_class_name)
+                                <br> Example:.blue_text { color: blue; } -
+                                Selects all elements with the class blue_text and sets their text color to blue.
+                            </p>
+                        </li>
+                        <li>
+                            <p><b>Child combinator</b> - selects child elements regardless of nesting depth, using a
+                                space
+                                between targets (e.g., div .container selects all elements with class .container inside
+                                div
+                                elements)
+                                <br>Example: div .button { margin-top: 10px; } - Selects all elements with the
+                                class button that are direct children of &lt;div&gt; elements and adds a top margin of
+                                10 pixels.
+                            </p>
+                        </li>
+                        <li>
+                            <p><b>Descendant combinator</b> - selects direct child elements, using > between targets
+                                (e.g.,
+                                div > .container selects all elements with class .container that are direct children of
+                                div
+                                elements)
+                                <br>Example: body > p { font-size: 16px; } - Selects all &lt;p&gt; elements that are
+                                direct descendants of the
+                                &lt;body&gt; element and sets their font size to 16 pixels.
+
+                            </p>
+                        </li>
+                        <li>
+                            <p><b>Adjacent sibling combinator</b> - targets elements directly following another element,
+                                using + (e.g., div+span)
+                                <br>Example: input + button { margin-left: 10px; } - Selects all &lt;button&gt; elements
+                                that
+                                immediately follow an &lt;input&gt; element and adds a left margin of 10 pixels.
+                            </p>
+                        </li>
+                        <li>
+                            <p><b>General sibling combinator</b> - targets elements following another element, even with
+                                other elements in between, using ~ (e.g., div~span)
+                                <br>Example: input + button { margin-left: 10px; } - Selects all &lt;button&gt; elements
+                                that follow an &lt;h2&gt;,even if there are other elements in between, and adds a left
+                                margin of 10 pixels.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Universal selector</b> - targets all elements, using *
+                                <br>Examples: * { margin-left: 10px; } Selects all elements on the page and sets a left
+                                margin of 10 pixels.
+                            </p>
+                        </li>
+                        <li>
+                            <p><b>Attribute selector</b> - targets elements based on specific attributes (e.g.,
+                                [attribute], [attribute="value"], [attribute^="value*"])
+                                <br>Examples: [title] { cursor: pointer; } - Selects all elements that have a title
+                                attribute and makes their cursor a pointer when hovering.
+                                <br>[href="https://www.example.com"] { color: blue; } - Selects all elements with an
+                                href attribute that has the exact value https://www.example.com and sets their text
+                                color to blue.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
