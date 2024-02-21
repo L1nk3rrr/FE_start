@@ -54,11 +54,10 @@ html {
 .white-text {
     color: #ffffff;
 }
-header,
-section,
-footer {
-    padding-left: 400px;
-    padding-right: 400px;
+.container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .menu {
     letter-spacing: 1px;
@@ -71,12 +70,11 @@ footer {
 .menu__item:first-child {
     margin-left: 0;
 }
-.menu__item a,
-.menu__item a:visited {
+.menu__item-link,
+.menu__item-link:visited {
     color: #000000;
 }
-.homepage,
-.homepage a:visited {
+.menu__item-link:hover {
     color: #34547a;
 }
 .title {
