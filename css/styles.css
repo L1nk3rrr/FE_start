@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    border-spacing: 1px;
+}
+th,
+td {
+    height: 40px;
+}
+table {
+    width: 100%;
+}
+.blue_back {
+    background-color: #4a86e8;
+}
+
+.yell_back {
+    background-color: #ffff00;
+}
