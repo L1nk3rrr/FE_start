@@ -4,13 +4,17 @@
     padding: 0;
     text-align: center;
 }
+
 main {
     flex: 0 1 100%;
 }
 
-ul,
-a {
+ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .site-wrapper {
@@ -37,13 +41,14 @@ a {
 .header {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #eba2a27e;
+    background-color: #eba2a2;
+    box-shadow: 0px 6px 43px -13px rgba(227,79,227,1);
 }
 
 .footer {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #eba2a27e;
+    background-color: #eba2a2;
 }
 
 .nav {
@@ -54,16 +59,71 @@ a {
 
 .menu {
     display: flex;
+    column-gap: 10px;
+}
+
+.menu a{
+    transition: .2s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .menu__item {
+    display: inline-flex;
+    position: relative;
+    border: 1px solid #000;
 }
+.anchorn {
+    display: inline-flex;
+    position: relative;
+}
+
 .menu__item-link {
+    padding: 10px 20px;
+    background-color: rgba(98, 198, 234, 0.616);
+    color: rgb(253, 254, 255);
+    text-transform: uppercase;
+    display: block;
 }
+
 .sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: max-content;
+    background-color: #eba2a2;
     display: none;
 }
+
 .sub-menu__item {
+    border: 1px solid #000;
 }
+
+.sub-menu__level2 {
+    left: 100%;
+    background-color: #eba2a2;
+    top: 0%;
+}
+
 .sub-menu__item-link {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.048);
+    color: rgb(253, 254, 255);
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu__item-link:hover,
+.menu__item-link:focus ,
+.sub-menu__item-link:hover,
+.sub-menu__item-link:focus,
+.nav > .menu > li:hover > a
+{
+    background-color:  rgba(0, 0, 0, 0.222);
+}
+
+
+.menu__item:hover > .sub-menu,
+.menu__item:focus + .sub-menu,
+.sub-menu__item:hover > .sub-menu,
+.sub-menu__item:focus + .sub-menu{
+    display: block;
 }
